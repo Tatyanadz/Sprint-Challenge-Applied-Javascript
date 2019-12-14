@@ -31,6 +31,6 @@ function Header() {
     return header
 }
 
-//ADDING TO DO
+//ADDING TO DOM
 const headerContainer = document.querySelector(".header-container")
 headerContainer.appendChild(Header())
