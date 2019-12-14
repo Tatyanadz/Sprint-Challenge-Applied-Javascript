@@ -9,28 +9,28 @@
 //    <div class="tab">topic here</div>
 
 
-function Tab(item) {
+// function Tab(item) {
     
-    const tab = document.createElement('div')
-    tab.classList.add('tab')
-    tab.textContent = item
+//     const tab = document.createElement('div')
+//     tab.classList.add('tab')
+//     tab.textContent = item
 
-    return tab
-}
+//     return tab
+// }
 
-const topics = document.querySelector('.topics')
-axios.get('https://lambda-times-backend.herokuapp.com/topics')
+// const topics = document.querySelector('.topics')
+// axios.get('https://lambda-times-backend.herokuapp.com/topics')
 
-  .then((response) => {
-      response.data.topics.forEach((item) => {
-          const tabs = Tab(item)
-          topics.appendChild(tabs)
+//   .then((response) => {
+//       response.data.topics.forEach((item) => {
+//           const tabs = Tab(item)
+//           topics.appendChild(tabs)
           
-      })
-      console.log(response)
-  })
+//       })
+//       console.log(response)
+//   })
 
-  .catch((error) => {
-      console.log('Request Failed')
-      console.log(error)
-  })
+//   .catch((error) => {
+//       console.log('Request Failed')
+//       console.log(error)
+//   })
